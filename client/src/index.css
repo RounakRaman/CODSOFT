@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .foot-heading{
+        @apply text-[500] text-[#555] text-[10px] sm:text-[14px] font-[500];
+    }
+
+    .foot-comp{
+        @apply text-gray-500 hover:text-black cursor-pointer text-[7px] sm:text-[10px] font-[500];
+    }
+
+    .foot-about{
+        @apply text-gray-500 text-[7px] sm:text-[10px];
+    }
+
+    .foot-contactdet{
+        @apply text-[9px] font-bold text-gray-500 relative text-[7px] sm:text-[9px] top-1 sm:bottom-1;
+    }
+
+
+    .transition-zaxis{
+        @apply transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-700;
+    }
+    .transition-zaxisbutton{
+        @apply transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 hover:text-[800] duration-500;
+    }
+    .transition-zaxisbuttonzoom{
+        @apply transition ease-in-out delay-150 hover:scale-110 hover:text-[800] duration-500;
+    }
+
+    .category-columnsmall{
+        @apply flex flex-1 flex-col gap-[10px] shadow-2xl shadow-red-300;
+    }
+
+    .category-row{
+        @apply flex flex-1 gap-[10px] shadow-2xl shadow-red-300 relative overflow-hidden;
+    }
+
+    .category-button{
+        @apply absolute top-0 bottom-0 left-0 right-0 h-[20px] sm:h-[40px] w-fit min-w-[50px] sm:min-w-[100px] bg-white hover:bg-blue-500 hover:text-white opacity-70 text-[6px] sm:text-[12px] text-[500] text-green-500 font-bold m-auto border-none rounded-sm;
+    }
+
+
+    .product-sideimg{
+        @apply  w-full h-[8vh] sm:h-[6vh] md:h-[6vh] lg:h-[95px] rounded-xl sm:rounded-2xl border-[1px] shadow-2xl shadow-stone-700 object-cover cursor-pointer mb-[10px];
+    }
+    .product-mainimg{
+        @apply h-full my-auto sm:mb-[300px] lg:my-auto  w-[72vw]  h-[45vh] sm:h-[40vh] md:h-[40vh] lg:h-[500px] xl:h-[82vh] gap-[10px] shadow-2xl shadow-stone-700
+    }
+}
